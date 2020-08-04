@@ -1,11 +1,11 @@
-# CREATE TABLE `Users`
-# (
-#     `id`       mediumint(8) unsigned NOT NULL auto_increment,
-#     `username` varchar(255) default NULL,
-#     `email_id` varchar(255) default NULL,
-#     `address`  varchar(255),
-#     PRIMARY KEY (`id`)
-# ) AUTO_INCREMENT = 1;
+CREATE TABLE `Users`
+(
+    `id`       mediumint(8) unsigned NOT NULL auto_increment,
+    `username` varchar(255) default NULL,
+    `email_id` varchar(255) default NULL,
+    `address`  varchar(255),
+    PRIMARY KEY (`id`)
+) AUTO_INCREMENT = 1;
 INSERT INTO `Users` (`username`, `email_id`, `address`)
 VALUES ('Leila, Teagan, Charles, Rae', 'sed.pede.Cum@leoCras.org', 'West Jakarta'),
        ('Roth, Silas, Matthew, Ariel', 'ullamcorper.Duis@Donec.co.uk', 'Swansea'),
@@ -1216,5 +1216,3 @@ VALUES ('Ora, Nathan, Zephania, Edward', 'luctus.ut@molestiein.net', 'Menai Brid
        ('Shay, Rajah, Kelsey, Ifeoma', 'commodo.at.libero@facilisisSuspendisse.ca', 'Shangla'),
        ('Fay, Lillian, Jeremy, Yolanda', 'nisl.arcu.iaculis@magnis.ca', 'Vorselaar'),
        ('Colorado, Jenna, Alexander, Anika', 'turpis@dignissim.co.uk', 'Wepion');
-
-select count(*) as users from Users;
